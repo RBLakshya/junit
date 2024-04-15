@@ -1,11 +1,14 @@
 package jUnitTestPackage;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
+import static org.junit.Assert.*;
 
-@RunWith(Suite.class)
-@SuiteClasses({})
-public class AllTests {
+public class testAddStrings {
+	
+	@test
+	public void test() {
+		jUnitFunction junitstring = new jUnitFunction();
+		String result = junitstring.addStrings("capstone","project");
+		assertEquals("capstoneproject",result);
+	}
 
 }
